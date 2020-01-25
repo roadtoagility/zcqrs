@@ -18,7 +18,7 @@ namespace SharedKernel
         {
             var service = _resolver.Resolve<TQuery, TResult>();
 
-            CheckActivation<TQuery, TResult>(service);
+            //CheckActivation<TQuery, TResult>(service);
             return Send<TResult, TQuery>(query, service.GetName());
         }
 

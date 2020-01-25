@@ -10,6 +10,16 @@ namespace SharedKernel
 {
     public abstract class QueryHandlerBase<TQuery, TResult>
     {
+
+
+        protected QueryHandlerBase()
+        {
+            if(!QueryHandlersActivation.Instance.IsActivate(GetName()))
+            {
+                Start();
+                QueryHandlersActivation.Instance.Activate(GetName());
+            }
+        }
         
         public void Start()
         {
@@ -44,7 +54,7 @@ namespace SharedKernel
                 }
                 catch (Exception ex)
                 {
-                    
+                    throw;
                 }
             }
         }

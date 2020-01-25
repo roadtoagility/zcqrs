@@ -10,21 +10,13 @@ using SharedKernel;
 namespace ProductModule.Handlers
 {
     
-    public class GetAllProductsHandler : QueryHandlerBase<GetAllProducts, IEnumerable<Product>>, IQueryHandler//IQueryHandler<GetAllProducts, IEnumerable<Product>>> //, IQueryHandler<GetAllProducts, IEnumerable<Product>>  //EntityFrameworkConnector
+    public class GetAllProductsHandler : QueryHandlerBase<GetAllProducts, IEnumerable<Product>>, IQueryHandler
     {
-        private readonly BenchmarkDBContext _context;
-
-        //private readonly BenchmarkDBContext _context;
-        public GetAllProductsHandler(BenchmarkDBContext context)
+        public GetAllProductsHandler()
         {
-            _context = context;
+            
         }
         
-        // public IEnumerable<Product> Handle(GetAllProducts query)
-        // {
-        //     return _context.Products.ToList();
-        // }
-
         public override string GetName()
         {
             return "GetAllProductsHandler";

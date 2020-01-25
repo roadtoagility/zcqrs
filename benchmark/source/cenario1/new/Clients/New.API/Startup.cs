@@ -55,7 +55,7 @@ namespace New.API
             });
 
             services.AddScoped<IDependencyResolver, AspNetCoreDependencyResolver>();
-            services.AddScoped<QueryHandlerBase<GetAllProducts, IEnumerable<Product>>, GetAllProductsHandler>();
+            services.AddScoped<QueryHandlerBase<GetAllProducts, IEnumerable<Product>>, GetAllProductsHandler>(); //
             services.AddScoped<IQueryDispatcher, QueryDispatcher>();
             
             services.AddControllers();
