@@ -7,6 +7,31 @@
     <e p="C:\Users\Douglas\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Douglas\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Core.-1497781228.00" t="ExcludeRecursive" />
     <e p="D:\projetos\labs\ZCRQS" t="IncludeFlat">
+      <e p="AppSource" t="Include">
+        <e p="readme.md" t="Include" />
+        <e p="Store.Web.Api" t="IncludeRecursive">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Controllers" t="Include">
+            <e p="WeatherForecastController.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Store.Web.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="Store.Web.Api.csproj" t="IncludeRecursive" />
+          <e p="WeatherForecast.cs" t="Include" />
+        </e>
+      </e>
       <e p="Core.Shared" t="IncludeRecursive">
         <e p="Base" t="Include">
           <e p="Aggregate" t="Include">
@@ -42,9 +67,7 @@
           </e>
         </e>
       </e>
-      <e p="Core.sln" t="IncludeFlat" />
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="ZCRQS" t="IncludeRecursive">
+      <e p="Core.Shared.TestClient" t="IncludeRecursive">
         <e p="Aggregates" t="Include">
           <e p="CustomerAggregate.cs" t="Include" />
           <e p="ProductCatalogAggregate.cs" t="Include" />
@@ -55,6 +78,7 @@
           <e p="AddProductCommand.cs" t="Include" />
           <e p="CreateProductCommand.cs" t="Include" />
         </e>
+        <e p="Core.Shared.TestClient.csproj" t="IncludeRecursive" />
         <e p="Entities" t="Include">
           <e p="Product.cs" t="Include" />
         </e>
@@ -77,8 +101,8 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="ZCRQS.AssemblyInfo.cs" t="Include" />
-              <e p="ZCRQS.Program.cs" t="Include" />
+              <e p="Core.Shared.TestClient.AssemblyInfo.cs" t="Include" />
+              <e p="Core.Shared.TestClient.Program.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -92,8 +116,9 @@
         <e p="Views" t="Include">
           <e p="ProductView.cs" t="Include" />
         </e>
-        <e p="ZCRQS.csproj" t="IncludeRecursive" />
       </e>
+      <e p="Core.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
